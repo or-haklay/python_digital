@@ -10,3 +10,7 @@ ip_list.append("456.456.456")
 ip_list.append("567.567.567")
 print(ip_list)
 print(len(ip_list))
+
+ip_list.pop(2)
+print(ip_list)
+print(len(ip_list))
