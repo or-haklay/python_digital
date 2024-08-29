@@ -11,3 +11,5 @@ print(my_dict)
 
 #print the number of entries and check if "idan" is inside
 print("\nThere are " + str(len(my_dict)) + " names in my list!")
+
+print("or" in my_dict)
