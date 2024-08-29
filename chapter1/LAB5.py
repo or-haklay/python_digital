@@ -6,7 +6,7 @@ sum = my_dict["or"]+my_dict["roi"]
 print("Or and Roi have " + str(sum) + "$ together\n")
 
 #add new name=dudu, his valeu equal to first and last sum
-my_dict.update({"ron":65000})
+my_dict.update({"ron":sum})
 print(my_dict)
 
 #print the number of entries and check if "idan" is inside
