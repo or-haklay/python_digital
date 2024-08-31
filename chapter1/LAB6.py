@@ -59,8 +59,7 @@ elif(choose=="3"):
 elif(choose=="4"):
 
     p_word=input("Enter your name: ")
-    n_word=p_word[::-1]
-    if(p_word==n_word):
+    if(p_word==p_word[::-1]):
         print("Your name is Polindrom!")
     else:
         print("Your name is'nt Polindrom!")
