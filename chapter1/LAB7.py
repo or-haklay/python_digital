@@ -1,4 +1,5 @@
 import random
+from time import sleep
 
 total=0
 user_chances=0
@@ -14,8 +15,10 @@ user_chances=user_money//3
 user_sper=user_money%3
 print("You get " + str(user_chances) + " Rollings\nYou got " + str(user_sper) + "$ sper")
 
-while user_chances > 0:
+for i in range (user_chances):
     try_num=try_num+1
+    print("\nRolling number " + str(try_num) + ":\n-------------\n")
+    sleep(2)
     cube_1=random.randint(1,6)
     cube_2=random.randint(1,6)
     if (cube_1==cube_2) and (cube_1==6):
@@ -28,8 +31,11 @@ while user_chances > 0:
         prize=20
     else:
         prize=0
-    print("\nRolling number " + str(try_num) + ":\n-------------\ncube 1: " + str(cube_1) + "\ncube 2: " + str(cube_2) + "\nYou get: " + str(prize) + "$")
+    print("cube 1: " + str(cube_1) + "\ncube 2: " + str(cube_2) + "\nYou get: " + str(prize) + "$")
     total=total+prize
     user_chances=user_chances-1
 
-print("\nYou win " + str(total) + "$\nYour total is: " + str(total-user_money+user_sper) + "$")
+sleep(1)
+print("\nYou win " + str(total) + "$")
+sleep(0.5)
+print("Your total is: " + str(total-user_money+user_sper) + "$")
